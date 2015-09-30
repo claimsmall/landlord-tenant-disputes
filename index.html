@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -13,14 +12,58 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
+    <!-- Begin Modal Header Scripts --> 
+     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body { margin-top:20px; }
+.modal-body:not(.two-col) { padding:0px }
+.glyphicon { margin-right:5px; }
+.glyphicon-new-window { margin-left:5px; }
+.modal-body .radio,.modal-body .checkbox {margin-top: 0px;margin-bottom: 0px;}
+.modal-body .list-group {margin-bottom: 0;}
+.margin-bottom-none { margin-bottom: 0; }
+.modal-body .radio label,.modal-body .checkbox label { display:block; }
+.modal-footer {margin-top: 0px;}
+@media screen and (max-width: 325px){
+    .btn-close {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .btn-results {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .btn-vote{
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+}
+.modal-footer .btn+.btn {
+    margin-left: 0px;
+}
+.progress {
+    margin-right: 10px;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<!-- End Modal Header Scripts --> 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="j-folder/css/demo.css">
+	<link rel="stylesheet" href="j-folder/css/font-awesome.min.css">
+	<link rel="stylesheet" href="j-folder/css/j-forms.css">
+    <link href="css/landing-page.css" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="j-folder/js/jquery.1.11.1.min.js"></script>
+	<script src="j-folder/js/jquery.maskedinput.min.js"></script>
+    <script src="j-folder/js/j-forms-multistep.js"></script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +75,7 @@
 
 <body>
 
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,7 +101,7 @@
                         <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#eFile">Start an eFile</a>
                     </li>
                 </ul>
             </div>
@@ -67,12 +110,10 @@
         <!-- /.container -->
     </nav>
 
-
-    <!-- Header -->
+<!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
@@ -99,12 +140,10 @@
 
     </div>
     <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a  name="services"></a>
+<!-- Page Content -->
+    <!-- Services Section -->
+	<a  href="" name="services"></a>
     <div class="content-section-a">
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
@@ -126,11 +165,8 @@
 
     </div>
     <!-- /.content-section-a -->
-
     <div class="content-section-b">
-
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
@@ -139,12 +175,13 @@
                     <p class="lead">
                         <ul>
                             <li>Reviewing each case</li> 
-<li>Preparing the small claims documents</li>
-<li>File the claim with the proper court</li>
-<li>Serve the defendant at his/her home or business</li>
-<li>File proof(s) of Services with the court</li></ul>
-<br/>Don't wait any longer, let us help you file your claim and turn your dispute into dollars today!</p>
-                <h3>
+                            <li>Preparing the small claims documents</li>
+                            <li>File the claim with the proper court</li>
+                            <li>Serve the defendant at his/her home or business</li>
+                            <li>File proof(s) of Services with the court</li>
+                        </ul>
+                    <br/>Don't wait any longer, let us help you file your claim and turn your dispute into dollars today!</p>
+                    <h3>
                         <a href="https://zi261.infusionsoft.com/app/page/contact-for-efile">Contact Us</a>
                     </h3>
                 </div>
@@ -158,11 +195,8 @@
 
     </div>
     <!-- /.content-section-b -->
-
     <div class="content-section-a">
-
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
@@ -183,36 +217,116 @@
 
     </div>
     <!-- /.content-section-a -->
-        <a href="" name="contact"></a>
-    <div class="banner">
+    <!-- eFile Section -->
+    <a href="" name="eFile"></a>
+    <div class="intro-header" name="eFile-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h2>Contact Us Today:</h2>
-                    <br/>
+                <!-- Begin jQuery Contact and Quiz Modal -->
+                <div class="container">
+	               <div class="row">
+    <br/><br/><br/>
+        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#vote" data-original-title>
+          5 Minute eFile! 
+        </a>
+        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title>
+          Contact An Expert, Free!
+        </a>
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Any questions? Feel free to contact us.</h4>
+                    </div>
+                    <form action="#" method="post" accept-charset="utf-8">
+                    <div class="modal-body" style="padding: 5px;">
+                          <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="email" placeholder="E-mail" type="text" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="subject" placeholder="Subject" type="text" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="comment" required></textarea>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="panel-footer" style="margin-bottom:-14px;">
+                            <input type="submit" class="btn btn-success" value="Send"/>
+                                <!--<span class="glyphicon glyphicon-ok"></span>-->
+                            <input type="reset" class="btn btn-danger" value="Clear" />
+                                <!--<span class="glyphicon glyphicon-remove"></span>-->
+                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            <div class="col-lg-8">
-                     <ul class="list-inline intro-social-buttons">
+            </div>
+        </div>
+    
+        
+        <div class="modal fade" id="vote" tabindex="-1" role="dialog" aria-labelledby="voteLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="panel-title" id="voteLabel"><span class="glyphicon glyphicon-arrow-right"></span>Step 1: Select the Amount You Will Be Suing For</h4>
+              </div>
+                <!-- Begin PayPal Modal -->
+              <div class="modal-body">                  
+                  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="HJ5CKQJKDBNYY">
+<table>
+<tr><td><input type="hidden" name="on0" value="Dispute Amount">Dispute Amount</td></tr><tr><td><select name="os0">
+	<option value="File Below $1,500">File Below $1,500 $200.00 USD</option>
+	<option value="File Between $1,500-$5,000">File Between $1,500-$5,000 $220.00 USD</option>
+	<option value="File Between $5,000-$10,000">File Between $5,000-$10,000 $255.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+              </div>
+                 <!-- End PayPal Modal -->
+            </div>
+          </div>
+        </div>
+	</div>
+                <!-- Begin Three Payment Options -->
+                <div class="col-lg-12" name="three-payment-options">
+                    <div class="intro-message">
+                        <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://zi261.infusionsoft.com/app/page/contact-for-efile" class="btn btn-default btn-lg"><i class="fa fa-mobile-phone"></i> <span class="network-name">Give Us Some Details to Review with You</span></a>
+                                <a href="https://zi261.infusionsoft.com/app/page/contact-for-efile" class="btn btn-default btn-lg"><i class="fa fa-mobile-phone"></i> <span class="network-name">Speak to an Expert About Your Case</span></a>
                             </li>
                             <li>
-                                <a href="http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=fb_ppc&utm_term=sept&utm_content=efile&utm_campaign=efile" class="btn btn-default btn-lg"><i class="fa fa-list-ol"></i> <span class="network-name">Complete an eFile in 15 min.</span></a>
+                                <a href=" http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=fb_ppc&utm_term=sept&utm_content=efile&utm_campaign=efile" class="btn btn-default btn-lg"><i class="fa fa-list-ol"></i> <span class="network-name">Complete eFile in 15 min.</span></a>
                             </li>
                             <li>
-                                <a href="http://bit.ly/1POUfx9" class="btn btn-default btn-lg"><i class="fa fa-calendar"></i> <span class="network-name">Start Your Claim Applicaiton, Risk Free</span></a>
+                                <a href="http://bit.ly/1POUfx9" class="btn btn-default btn-lg"><i class="fa fa-calendar"></i> <span class="network-name">Start Your Claim Application</span></a>
                             </li>
                         </ul>
+                    </div>
                 </div>
-                
             </div>
-                
-                
-            </div>
-        <!-- /.container -->
-    <!-- /.banner -->
-
+        </div>
+    </div>
+    <!-- Contact Section -->
     <!-- Footer -->
     <footer>
         <div class="container">

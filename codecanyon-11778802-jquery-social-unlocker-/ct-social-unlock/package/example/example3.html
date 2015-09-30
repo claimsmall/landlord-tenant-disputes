@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="css/socialUnlocker.css">
+</head>
+<style type="text/css">
+
+    section{
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+
+</style>
+<body class="secretContainer">
+<section>
+
+        <h4>Header</h4>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_luhn7TLfWU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+</section>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/socialUnlocker.js"></script>
+
+<script>
+
+    $('.secretContainer').socialUnlocker({
+
+        texts:{
+            maskHeader: "Like Us",
+            maskText: "We show you hidden content"
+        },
+
+        buttons      : ["facebook_like", "twitter_tweet",  "google_plus1"],
+        closeButton: true,
+
+        theme: "blueSky",
+        fullPage: true,
+
+        facebook:{
+            appId: "659569734174330",
+            likeButton:{
+                url: "https://www.facebook.com/createITpl"
+            }
+        },
+
+        twitter:{
+            tweetButton: {
+                url: "http://www.createit.pl/en/",
+                message: "Nicola Tesla inventor",
+                hashtags: "tesla, inventor, ac"
+            }
+
+        },
+
+        googlePlus:{
+            plusOneButton:{
+                url: "http://www.createit.pl/en/"
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

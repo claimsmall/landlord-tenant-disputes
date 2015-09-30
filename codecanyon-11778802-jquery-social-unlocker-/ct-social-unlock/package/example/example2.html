@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="css/socialUnlocker.css">
+</head>
+<style type="text/css">
+
+    section{
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+
+</style>
+<body>
+
+
+
+
+<section>
+    <div class="secretContainer">
+
+        <h4>Secret Header</h4>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_luhn7TLfWU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/socialUnlocker.js"></script>
+
+<script>
+
+    $('.secretContainer').socialUnlocker({
+
+        texts:{
+            maskHeader: "Share",
+            maskText: "We show you hidden content"
+        },
+
+        buttons      : ["facebook_share", "twitter_follow",  "google_share"],
+        closeButton: true,
+        theme: "blueSky",
+
+        facebook:{
+            appId: "659569734174330",
+            shareButton:{
+                url:"https://www.facebook.com/createITpl/posts/898868683469333",
+                name        : "CreateIT",
+                picture     : "http://www.createit.pl//wp-content/uploads/sites/2/2015/02/createit-landing-logo-upd.png",
+                caption     : "CreateIT",
+                description : "We are createIT. We create IT. And we are really good at it."
+            }
+        },
+
+        twitter:{
+            followButton:{
+                username: "createitpl"
+            }
+        },
+
+        googlePlus:{
+            shareButton: {
+                url: "http://www.createit.pl/en/"
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>
