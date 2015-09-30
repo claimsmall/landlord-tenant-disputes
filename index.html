@@ -125,7 +125,7 @@
                                 <a href="https://zi261.infusionsoft.com/app/page/contact-for-efile" class="btn btn-default btn-lg"><i class="fa fa-mobile-phone"></i> <span class="network-name">Speak to an Expert About Your Case</span></a>
                             </li>
                             <li>
-                                <a href=" http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=fb_ppc&utm_term=sept&utm_content=efile&utm_campaign=efile" class="btn btn-default btn-lg"><i class="fa fa-list-ol"></i> <span class="network-name">Complete eFile in 15 min.</span></a>
+                                <a href=" http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=aw_ppc&utm_term=oct&utm_content=efile&utm_campaign=efile" class="btn btn-default btn-lg"><i class="fa fa-list-ol"></i> <span class="network-name">Complete eFile in 15 min.</span></a>
                             </li>
                             <li>
                                 <a href="http://bit.ly/1POUfx9" class="btn btn-default btn-lg"><i class="fa fa-calendar"></i> <span class="network-name">Start Your Claim Application</span></a>
@@ -225,102 +225,44 @@
                 <!-- Begin jQuery Contact and Quiz Modal -->
                 <div class="container">
 	               <div class="row">
-    <br/><br/><br/>
-        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#vote" data-original-title>
-          5 Minute eFile! 
-        </a>
-        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" data-original-title>
-          Contact An Expert, Free!
-        </a>
-        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Any questions? Feel free to contact us.</h4>
-                    </div>
-                    <form action="#" method="post" accept-charset="utf-8">
-                    <div class="modal-body" style="padding: 5px;">
-                          <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                    <input class="form-control" name="firstname" placeholder="Firstname" type="text" required autofocus />
+                    <br/><br/><br/>
+                    <h2>Have Plaintiff and Defendant Contact Info?</h2>
+                    <a class="btn btn-primary btn-lg" href="http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=fb_ppc&utm_term=sept&utm_content=efile&utm_campaign=efile" target="_blank" name="efileBtn">
+                      5 Minute eFile! 
+                    </a>
+                    <h2>Need Help Filing or Finding Necessary Info?</h2>
+                    <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact" name="modalContactForm" data-original-title>
+                      Contact An Expert, Free!
+                    </a>
+                    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span> Any questions? Feel free to contact us.</h4>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                    <input class="form-control" name="lastname" placeholder="Lastname" type="text" required />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                    <input class="form-control" name="email" placeholder="E-mail" type="text" required />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                    <input class="form-control" name="subject" placeholder="Subject" type="text" required />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="comment" required></textarea>
+                                <div class="modal-body" style="padding: 5px;">
+                                    <form accept-charset="UTF-8" action="https://zi261.infusionsoft.com/app/form/process/50ce6e8722f533e146c79add0bba942e" class="infusion-form" method="POST">
+                                    <input name="inf_form_xid" type="hidden" value="50ce6e8722f533e146c79add0bba942e">
+                                    <input name="inf_form_name" type="hidden" value="Express Landing Page Form">
+                                    <input name="infusionsoft_version" type="hidden" value="1.44.0.47">
+                                    <input class="form-control input-box" id="inf_field_FirstName" type="text" name="inf_field_FirstName" placeholder="First Name">
+                                    <input class="form-control input-box" id="inf_field_LastName" type="text" name="inf_field_LastName" placeholder="Last Name">
+                                    <input class="form-control input-box" id="inf_field_Email" type="email" name="inf_field_Email" placeholder="Your Email">
+                                    <input class="form-control input-box" id="inf_field_Phone1" type="text" name="inf_field_Phone1" placeholder="Phone Number">
+                                     <label for="inf_custom_ServiceSelect"></label>
+                                        <select id="inf_custom_ServiceSelect" name="inf_custom_ServiceSelect"><option value="">Please select one</option><option value="I want to file a new claim.">I want to file a new claim.</option><option value="Done filing need additional help.">Done filing need additional help.</option><option value="Done with trail tracking payments.">Done with trail tracking payments.</option><option value="I'm calling for a consultation">I'm calling for a consultation</option>                                       </select>
+                                    <br />
+                                    <br />
+                                    <div class="infusion-submit">
+                                              <button style="text-align: center;" type="submit" class="btn btn-default" value="Send">Send</button> 
+                                                <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal" value="Send">Close</button>                         
+                                    </div>
+                                    </form>
+                                    </div>  
                                 </div>
                             </div>
-                        </div>  
-                        <div class="panel-footer" style="margin-bottom:-14px;">
-                            <input type="submit" class="btn btn-success" value="Send"/>
-                                <!--<span class="glyphicon glyphicon-ok"></span>-->
-                            <input type="reset" class="btn btn-danger" value="Clear" />
-                                <!--<span class="glyphicon glyphicon-remove"></span>-->
-                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">Close</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="modal fade" id="vote" tabindex="-1" role="dialog" aria-labelledby="voteLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="panel-title" id="voteLabel"><span class="glyphicon glyphicon-arrow-right"></span>Step 1: Select the Amount You Will Be Suing For</h4>
-              </div>
-                <!-- Begin PayPal Modal -->
-              <div class="modal-body">                  
-                  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="HJ5CKQJKDBNYY">
-<table>
-<tr><td><input type="hidden" name="on0" value="Dispute Amount">Dispute Amount</td></tr><tr><td><select name="os0">
-	<option value="File Below $1,500">File Below $1,500 $200.00 USD</option>
-	<option value="File Between $1,500-$5,000">File Between $1,500-$5,000 $220.00 USD</option>
-	<option value="File Between $5,000-$10,000">File Between $5,000-$10,000 $255.00 USD</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-              </div>
-                 <!-- End PayPal Modal -->
-            </div>
-          </div>
-        </div>
-	</div>
-                <!-- Begin Three Payment Options -->
-                <div class="col-lg-12" name="three-payment-options">
-                    <div class="intro-message">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://zi261.infusionsoft.com/app/page/contact-for-efile" class="btn btn-default btn-lg"><i class="fa fa-mobile-phone"></i> <span class="network-name">Speak to an Expert About Your Case</span></a>
-                            </li>
-                            <li>
-                                <a href=" http://smallclaim.com/small-claim-1/?utm_source=fb&utm_medium=fb_ppc&utm_term=sept&utm_content=efile&utm_campaign=efile" class="btn btn-default btn-lg"><i class="fa fa-list-ol"></i> <span class="network-name">Complete eFile in 15 min.</span></a>
-                            </li>
-                            <li>
-                                <a href="http://bit.ly/1POUfx9" class="btn btn-default btn-lg"><i class="fa fa-calendar"></i> <span class="network-name">Start Your Claim Application</span></a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -354,10 +296,18 @@
             </div>
         </div>
     </footer>
-
+    
+        <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-586XTX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-586XTX');</script>
+    <!-- End Google Tag Manager -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
